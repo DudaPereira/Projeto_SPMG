@@ -7820,11 +7820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maria\\OneDrive\\Área de Trabalho\\SPMedicalGroup\\SPMedicalGroup_webApi\\senai.sp_medicals.webApi\\senai.sp_medicals.webApi.csproj",
+      "projectUniqueName": "C:\\Users\\Maria\\OneDrive\\Área de Trabalho\\ProjetoSPMG\\SPMedicalGroup_webApi\\senai.sp_medicals.webApi\\senai.sp_medicals.webApi.csproj",
       "projectName": "senai.sp_medicals.webApi",
-      "projectPath": "C:\\Users\\Maria\\OneDrive\\Área de Trabalho\\SPMedicalGroup\\SPMedicalGroup_webApi\\senai.sp_medicals.webApi\\senai.sp_medicals.webApi.csproj",
+      "projectPath": "C:\\Users\\Maria\\OneDrive\\Área de Trabalho\\ProjetoSPMG\\SPMedicalGroup_webApi\\senai.sp_medicals.webApi\\senai.sp_medicals.webApi.csproj",
       "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maria\\OneDrive\\Área de Trabalho\\SPMedicalGroup\\SPMedicalGroup_webApi\\senai.sp_medicals.webApi\\obj\\",
+      "outputPath": "C:\\Users\\Maria\\OneDrive\\Área de Trabalho\\ProjetoSPMG\\SPMedicalGroup_webApi\\senai.sp_medicals.webApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",

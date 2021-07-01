@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8jpJ6Eroj0InX2ioAHPgw7F+6obflYRphRF01VPCcPXOY6YNosQHbgWAL/U9OTtVl24o19g48kIHJodka50TXw==",
+  "dgSpecHash": "YS0I0/1/U5d5IOi55qAFu+HiEdXkvOlAvCoSj1ENhXvM6OgI7PpiB7lDo55g5OWvhzYF3xem/nyZwfiqT9SJ1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maria\\OneDrive\\Área de Trabalho\\SPMedicalGroup\\SPMedicalGroup_webApi\\senai.sp_medicals.webApi\\senai.sp_medicals.webApi.csproj",
+  "projectFilePath": "C:\\Users\\Maria\\OneDrive\\Área de Trabalho\\ProjetoSPMG\\SPMedicalGroup_webApi\\senai.sp_medicals.webApi\\senai.sp_medicals.webApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maria\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
     "C:\\Users\\Maria\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
