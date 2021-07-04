@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import api from '../../services/api';
 
@@ -11,15 +12,23 @@ constructor(props){
   }
 }
 
-buscarConsultas = async  () => {
-  const resposta = await api.get('/paciente-consulta')
-  const dadosDaApi = resposta.data;
-  this.setState({listaPaciente : dadosDaApi})
+buscarConsultas = async () => {
+
+  const valorToken = await AsyncStorage.getItem('userToken')
+
+  const resposta = await api.get('/paciente-consulta', {
+    headers : {
+      'Authorization' : 'Bearer ' + valorToken
+    }
+  })
+  const dadosDaApi = resposta.data
+  this.setState({ listaPaciente : dadosDaApi })
 }
 
-componentDidMount () {
-  this.buscarConsultas();
+componentDidMount(){
+  this.buscarConsultas()
 }
+
 
   render() {
     return (

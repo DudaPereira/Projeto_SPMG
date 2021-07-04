@@ -11,7 +11,7 @@ export default function Stack (){
   return(
     <NavigationContainer>
       <AuthStack.Navigator
-        // headerMode = 'none'
+        headerMode = 'none'
       > 
         <AuthStack.Screen name= 'login' component={login}/>
         <AuthStack.Screen name= 'main' component={main}/>
