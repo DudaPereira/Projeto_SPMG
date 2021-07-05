@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.login {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.login-img {
+    max-width: 960px;
+    width: 45%;
+}
+  
+  @media screen and (max-width: 496px) {
+    .login-img {
+      display: none;
+    }
+  }
+  
+  /* formulario */
+  .login-formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .login-titulo {
+    font-family: "Roboto", sans-serif;
+    color: 7EB9DB;
+    font-size: 3em;
+  }
+  
+  /* inputs */
+  ::-webkit-input-placeholder {
+    color: #7EB9DB;
+  }
+  
+  .email-input,
+  .senha-input {
+    border: 2px solid 7EB9DB;
+    font-size: 1.3125em;
+  }
+  
+  .email-paragrafo,
+  .senha-paragrafo {
+    font-size: 1.625em;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .email,
+  .senha {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+  }
+  
+  /* botao lembrar de mim */
+  .lembrar-de-mim-checkbox {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 10px;
+  }
+  
+  .lembrar-paragrafo {
+    font-family: "Roboto", sans-serif;
+    color: #7EB9DB;
+  }
+  
+  /* botao logar */
+  .btn {
+    display: flex;
+    justify-content: center;
+    max-width: 960px;
+    margin-bottom: 30px;
+  }
+  
+  .btn-logar {
+    background-color: white;
+    width: 290px;
+    height: 27px;
+    border: 1 #7EB9DB;
+    border-radius: 5px ;
+    font-family: "Roboto", sans-serif;
+    color: #7EB9DB;
+    font-size: 1.375em;
+    font-weight: bold;
+    cursor: pointer;
+  }
