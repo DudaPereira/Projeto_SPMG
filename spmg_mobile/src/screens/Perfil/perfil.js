@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import jwtDecode from 'jwt-decode';
 
@@ -7,25 +7,31 @@ export default class Perfil extends Component {
   constructor(props){
     super(props);
     this.state = {
-      // nome : '',
       email : ''
     }
   };
 
-  buscarDadosStorage = async () =>{
+  buscarDadosStorage = async () => {
     try {
       
-      const valorToken = await AsyncStorage.setItem('userToken');
-      console.warn(jwtDecode(valorToken))
+      const valorToken = await AsyncStorage.getItem('userToken');
+      console.warn( jwtDecode(valorToken) )
 
       if (valorToken !== null) {
-        this.setState({email : jwtDecode(valorToken).email})
+        // this.setState({ nome : jwtDecode(valorToken).name });
+        this.setState({ email : jwtDecode(valorToken).email });
+
       }
 
     } catch (error) {
       console.warn(error)
     }
-  }
+  };
+
+  componentDidMount() {
+    this.buscarDadosStorage();
+  };
+
   realizarLogout = async () => {
     try {
       
@@ -36,10 +42,6 @@ export default class Perfil extends Component {
       console.warn(error)
     }
   };
-
-  componentDidMount() {
-    this.buscarDadosStorage();
-  }
 
   render(){
     return (
@@ -56,10 +58,6 @@ export default class Perfil extends Component {
         {/* Corpo - Body - Section */}
         <View style={styles.mainBody}>
           <View style={styles.mainBodyInfo}>
-            {/* <Image 
-              source={imagem vinda da API}
-              style={styles.mainBodyImg}
-            /> */}
             <View style={styles.mainBodyImg} />
 
             <Text style={styles.mainBodyText}>Nome</Text>
@@ -81,72 +79,71 @@ export default class Perfil extends Component {
 
 const styles = StyleSheet.create({
 
-  // conteúdo da main
-  main: {
-    flex: 1,
-    backgroundColor: '#F1F1F1'
-  },
-  // cabeçalho
-  mainHeader: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  mainHeaderRow: {
-    flexDirection: 'row'
-  },
-  // texto do cabeçalho
-  mainHeaderText: {
-    fontSize: 16,
-    letterSpacing: 5,
-    color: '#999',
-    fontFamily: 'Open Sans'
-  },
-  // linha de separação do cabeçalho
-  mainHeaderLine: {
-    width: 220,
-    paddingTop: 10,
-    borderBottomColor: '#7EB9DB',
-    borderBottomWidth: 1
-  },
-
-  // conteúdo do body
-  mainBody: {
-    flex: 4,
-    alignItems: 'center',
-    justifyContent: 'space-between'
-  },
-  // informações do usuário
-  mainBodyInfo: {
-    alignItems: 'center'
-  },
-  mainBodyImg: {
-    backgroundColor: '#ccc',
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    marginBottom: 50
-  },
-  mainBodyText: {
-    color: '#999',
-    fontSize: 16,
-    marginBottom: 20
-  },
-  // botão de logout
-  btnLogout: {
-    alignItems: "center",
-    justifyContent: "center",
-    height: 80,
-    width: 240,
-    borderTopWidth: 1,
-    borderColor: '#7EB9DB',
-    marginBottom: 50
-  },
-  // texto do botão
-  btnLogoutText: {
-    fontSize: 16,
-    fontFamily: "Open Sans",
-    color: '#7EB9DB'
-  }
-
-});  
+    // conteúdo da main
+    main: {
+      flex: 1,
+      backgroundColor: '#F1F1F1'
+    },
+    // cabeçalho
+    mainHeader: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    mainHeaderRow: {
+      flexDirection: 'row'
+    },
+    // texto do cabeçalho
+    mainHeaderText: {
+      fontSize: 16,
+      letterSpacing: 5,
+      fontFamily: 'Open Sans'
+    },
+    // linha de separação do cabeçalho
+    mainHeaderLine: {
+      width: 220,
+      paddingTop: 10,
+      borderBottomColor: '#7EB9DB',
+      borderBottomWidth: 1
+    },
+  
+    // conteúdo do body
+    mainBody: {
+      flex: 4,
+      alignItems: 'center',
+      justifyContent: 'space-between'
+    },
+    // informações do usuário
+    mainBodyInfo: {
+      alignItems: 'center'
+    },
+    mainBodyImg: {
+      backgroundColor: '#ccc',
+      width: 100,
+      height: 100,
+      borderRadius: 50,
+      marginBottom: 50
+    },
+    mainBodyText: {
+      color: '#999',
+      fontSize: 16,
+      marginBottom: 20
+    },
+    // botão de logout
+    btnLogout: {
+      alignItems: "center",
+      justifyContent: "center",
+      height: 80,
+      width: 240,
+      borderTopWidth: 1,
+      borderColor: '#7EB9DB',
+      marginBottom: 50
+    },
+    // texto do botão
+    btnLogoutText: {
+      fontSize: 16,
+      fontFamily: "Open Sans",
+      color: '#7EB9DB'
+    }
+  
+  });  
