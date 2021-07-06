@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+    background-color: #7EB9DB;
+}
+.cadastrar{
+    background-color: beige;
+    max-width: 960px;
+    width: 510px;
+    height: 520px;
+}
+
+.tituloCadastro,
+.line-cadastro{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.line-cadastro{
+    background-color: cadetblue;
+    width: 70px;
+    height: 1px;
+    padding-bottom: 10px;
+}
+
+.inputs{
+    background-color: blue;
+    width: 360px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nomeMed-input,
+.especialidade-input,
+.nomePaci-input,
+.dataCons-input,
+.situacao-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnCadastrar{
+    width: 215px;
+    height: 40px;
+}
+
+.direita-listar{
+    background-color: cyan;
+}
+.listar{
+    background-color: crimson;
+    width: 654px;
+    height: 378px;
+    display: flex;
+}
+
+img{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.img1{
+    width: 67px;
+    padding-left: 10px;
+}
+.img2{
+    width: 67px;
+    padding-left: 18px;
+}
+.img3{
+    width: 58px;
+    padding-left: 17px;
+}
+
+.text-esquerda{
+    display: flex;
+    flex-direction: column;
+}
+
+
