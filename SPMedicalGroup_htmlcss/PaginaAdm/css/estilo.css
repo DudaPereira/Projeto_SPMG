@@ -5,14 +5,19 @@
     padding: 0px;
 }
 
-.body{
+body{
     background-color: #7EB9DB;
+    display: flex;
 }
 .cadastrar{
     background-color: beige;
     max-width: 960px;
-    width: 510px;
-    height: 520px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tituloCadastro,
@@ -63,18 +68,28 @@
 
 .direita-listar{
     background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 .listar{
     background-color: crimson;
     width: 654px;
     height: 378px;
     display: flex;
+    align-items: center;
 }
 
-img{
+.img-esquerda{
     display: flex;
     flex-direction: column;
+    align-items: baseline;
     padding-bottom: 10px;
+}
+
+.esquerda{
+    display: flex;
 }
 
 .img1{
@@ -94,5 +109,6 @@ img{
     display: flex;
     flex-direction: column;
 }
+
 
 
