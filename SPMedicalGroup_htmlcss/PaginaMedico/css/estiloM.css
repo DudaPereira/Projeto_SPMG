@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #7EB9DB;
+    display: flex;
+}
+
+.imgM{
+    background-color: white;
+}
+
+.direita-listar{
+    background-color: #7EB9DB;
+    max-width: 960px;
+    width: 50%;
+    height: 624px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.tituloLista{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.h1-consulta{
+    border-bottom: 2px solid white;
+}
+
+.consultasLista{
+    display: flex;
+    flex-direction: column;
+}
+
+.li-line{
+    border: 1px solid white;
+}
+
+h2{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.lista2{
+    padding-top: 15px;
+}

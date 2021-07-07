@@ -123,6 +123,7 @@ const styles = StyleSheet.create({
     mainHeaderText: {
       fontSize: 20,
       letterSpacing: 5,
+      paddingTop: 10,
       color: '#000',
       fontFamily: 'Roboto'
     },
